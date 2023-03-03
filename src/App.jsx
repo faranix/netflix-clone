@@ -1,8 +1,12 @@
-import React from 'react'
+// === Components === //
+import TopBar from "./components/app/TopBar";
+
 
 const App = () => {
   return (
-    <div>App</div>
+    <div className="app">
+        <TopBar />
+    </div>
   )
 }
 

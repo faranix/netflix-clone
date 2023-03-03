@@ -1,0 +1,44 @@
+// === Import === //
+@use "../../abstract" as *;
+
+.top-bar {
+    @include flex(none, center, flex-end);
+    padding: 1.5rem 0.5rem;
+
+    p {
+        font-size: $fs-3;
+        font-weight: lighter;
+    }
+
+    &__new {
+        margin-right: 1rem;
+        padding: .3rem .6rem;
+        font-size: $fs-6;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $color-white;
+        background: $color-primary;
+        border-radius: $radius-1;
+    }
+
+    &__price {
+        font-size: $fs-2;
+        font-weight: bold;
+    }
+
+    &__btn {
+        align-self: center;
+        margin-left: 2rem;
+        padding-top: .2rem;
+        font-size: $fs-4;
+        font-weight: bold;
+        color: $color-blue;
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        i {
+            margin-left: .5rem;
+        }
+    }
+}
